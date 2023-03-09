@@ -19,18 +19,12 @@ int main()
     long long n, k, out, middle;
     cin >> n >> k;
     if (n % 2 == 0)
-    {
         // even
         middle = n/2;
-        cout << getResult(n, k, middle);
-
-    }
     else
-    {
         // odd
         middle = (n/2)+1;
-        cout << getResult(n, k, middle);
-    }
+    cout << getResult(n, k, middle);
 
     return 0;
 }
