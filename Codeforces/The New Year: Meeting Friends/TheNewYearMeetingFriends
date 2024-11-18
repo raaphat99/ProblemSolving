@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TheNewYearMeetingFriends
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            int[] numbers = input.Split(' ').Select(int.Parse).ToArray();
+            Array.Sort(numbers);
+            int x = numbers[0], y = numbers[1], z = numbers[2];
+            int medium = numbers[1];
+            int totalSteps = Math.Abs(x - medium) + Math.Abs(y - medium) + Math.Abs(z - medium);
+            Console.WriteLine(totalSteps);
+        }
+    }
+}
