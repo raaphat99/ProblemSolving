@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Schema;
+
+namespace VasyaTheHipster
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, days1, days2;
+            string input = Console.ReadLine();
+            int[] numbers = input.Split(' ').Select(int.Parse).ToArray();
+
+            x = numbers[0];
+            y = numbers[1];
+
+            int max, min;
+            if (x >= y)
+            {
+                max = x;
+                min = y;
+            }
+            else
+            {
+                max = y;
+                min = x;
+            }
+
+            Console.WriteLine($"{min} {(max - min) / 2}");
+        }
+    }
+}
