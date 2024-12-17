@@ -1,1 +1,1 @@
-This repository is for me, adding solutions to silly Codeforces programming problems to pretend I'm a great programmer.
+This is where I showcase my solutions to programming challenges from platforms like Codeforces and LeetCode. Explore efficient code, and my thought process in solving a wide range of problems.
